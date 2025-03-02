@@ -22,10 +22,10 @@ This project analyzes global merchandise trade trends from 1947 to 2023, with a 
 - 6.What strategies can improve India’s trade competitiveness?
 
 ## 📊 Key Features
-✅ **BigQuery for Data Extraction** – Query and fetch trade data from Google BigQuery.
-✅ **ChatGPT AI for Insight Generation** – Enhance analysis with AI-powered insights.
-✅ **Python for Data Processing & Visualization** – Generate interactive charts.
-✅ **Automated PDF Report** – Structured insights with data-driven storytelling.
+- ✅ **BigQuery for Data Extraction** – Query and fetch trade data from Google BigQuery.
+- ✅ **ChatGPT AI for Insight Generation** – Enhance analysis with AI-powered insights.
+- ✅ **Python for Data Processing & Visualization** – Generate interactive charts.
+- ✅ **Automated PDF Report** – Structured insights with data-driven storytelling.
 
 ---
 ##  Data Overview
