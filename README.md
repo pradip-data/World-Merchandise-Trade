@@ -1,7 +1,25 @@
-# 🌍 Global Trade Analysis using ChatGPT AI, Google BigQuery & Python
+
+
+# 🌍Global Merchandise Trade (1947-2023) Analysis using ChatGPT AI, Google BigQuery & Python
 
 ## 📌 Project Overview
-This project leverages **ChatGPT AI, Google BigQuery, and Python** to analyze and visualize **global trade data**. It extracts insights from a dataset containing trade indicators across multiple countries, products, and years. The results are presented through **Python-based visualizations** and a structured **PDF report**.
+This project analyzes global merchandise trade trends from 1947 to 2023, with a primary focus on India's trade performance. The dataset is sourced from Google BigQuery and consists of indicators such as exports, imports, total trade, and trade deficit for different countries. The analysis leverages Google BigQuery for data extraction, Python for visualization, and ChatGPT AI for insights generation.**.
+
+
+## 📊 Key Objectives
+
+- Analyze India's **exports, imports, total trade, and trade deficit** over time.
+- Compare India's trade performance against global leaders.
+- Identify key trade trends, challenges, and opportunities for improvement.
+- 
+## 📊 Key Questions Analyzed
+
+1.How has global trade evolved from 1947 to 2023?
+2.What is India’s trade performance in exports, imports, and total trade?
+3.How has India’s trade deficit changed over time?
+4.How does India compare with top exporting and importing nations?
+5.What are the key challenges in India’s trade landscape?
+6.What strategies can improve India’s trade competitiveness?
 
 ## 📊 Key Features
 ✅ **BigQuery for Data Extraction** – Query and fetch trade data from Google BigQuery.
@@ -10,29 +28,23 @@ This project leverages **ChatGPT AI, Google BigQuery, and Python** to analyze an
 ✅ **Automated PDF Report** – Structured insights with data-driven storytelling.
 
 ---
+##  Data Overview
+### Dataset Structure
+The dataset consists of the following key columns:
 
-## 📂 Dataset Description
-The dataset contains **global trade data**, including the following columns:
-
-| Column Name         | Description                                   |
-|---------------------|----------------------------------------------|
-| `IndicatorCode`     | Trade metric identifier                      |
-| `Indicator`        | Trade metric name                            |
-| `ReporterCountry`  | Country reporting the trade data            |
-| `Partner`         | Trading partner country                      |
-| `ProductCode`      | Unique code for the product                  |
-| `Product`         | Product name                                 |
-| `Year`            | Year of the trade transaction                |
-| `Value_MillionUSD` | Trade value in million USD                   |
-
----
-
-## 🚀 Technologies Used
-- **Google BigQuery** – For data extraction
-- **Python (Pandas, Matplotlib, Seaborn, FPDF)** – Data processing, visualization, and report generation
-- **ChatGPT AI** – Insight generation
+| Column Name         | Description |
+|--------------------|-------------|
+| **IndicatorCode**  | Unique code for trade indicators |
+| **Indicator**      | Type of trade (Exports/Imports) |
+| **ReporterCountry** | Country reporting the trade |
+| **Partner**        | Trade partner country |
+| **ProductCode**    | Unique product identifier |
+| **Product**        | Name of traded product |
+| **Year**           | Trade year |
+| **Value_MillionUSD** | Trade value in million USD |
 
 ---
+
 
 ## 📥 Installation
 1. **Clone the Repository**
@@ -54,77 +66,163 @@ pip install pandas matplotlib seaborn fpdf google-cloud-bigquery
 export GOOGLE_APPLICATION_CREDENTIALS="path/to/your-key.json"
 ```
 
+
+## Analysis Sections
+
+### 📌 Section A: BigQuery Code & Console Screenshots
+
+#### 1️⃣ Yearly Growth of Trade Value (1948-2023)
+```sql
+WITH YearlyTrade AS (
+    SELECT 
+        Year, 
+        SUM(Value_MillionUSD) AS Trade_Value
+    FROM `my-project-1711648161671.World_Trade.Countries_Merchandise_Trade`
+    WHERE Product="Total merchandise"
+    GROUP BY Year
+)
+SELECT 
+    Year, 
+    Trade_Value, 
+    LAG(Trade_Value) OVER (ORDER BY Year) AS Prev_Year_Trade_Value,
+    ROUND(((Trade_Value - LAG(Trade_Value) OVER (ORDER BY Year)) / LAG(Trade_Value) OVER (ORDER BY Year)) * 100, 2) AS Growth_Percentage
+FROM YearlyTrade
+ORDER BY Year;
+```
+
+#### 2️⃣ India's Total Trade Value (Exports + Imports) (1948-2023)
+```sql
+SELECT 
+    Year, 
+    SUM(Value_MillionUSD) AS Total_Trade_Value
+FROM `my-project-1711648161671.World_Trade.Countries_Merchandise_Trade`
+WHERE ReporterCountry = 'India' AND Product ="Total merchandise"
+GROUP BY Year
+ORDER BY Year;
+```
+
+#### 3️⃣ India's Trade Deficit (1948-2023)
+```sql
+WITH IndiaTrade AS (
+    SELECT 
+        Year,
+        SUM(CASE WHEN Indicator = 'exports' THEN Value_MillionUSD ELSE 0 END) AS India_Exports,
+        SUM(CASE WHEN Indicator = 'imports' THEN Value_MillionUSD ELSE 0 END) AS India_Imports
+    FROM `my-project-1711648161671.World_Trade.Countries_Merchandise_Trade`
+    WHERE ReporterCountry = 'India' AND Product ="Total merchandise"
+    GROUP BY Year
+)
+SELECT 
+    Year,
+    India_Exports,
+    India_Imports,
+    (India_Imports - India_Exports) AS Trade_Deficit,
+    CASE 
+        WHEN (India_Imports - India_Exports) > 0 THEN 'Trade Deficit'
+        ELSE 'Trade Surplus'
+    END AS Trade_Status
+FROM IndiaTrade
+ORDER BY Year;
+```
+
+📸 **BigQuery Execution Screenshots:** *(Add screenshots here)*
+
 ---
 
-## 📜 Code Overview
-### 1️⃣ **Extracting Data from BigQuery**
+### 📌 Section B: Python Code & Visualizations
+
+#### 📊 Python Code for Data Visualization
 ```python
-from google.cloud import bigquery
 import pandas as pd
-
-client = bigquery.Client()
-query = """
-    SELECT IndicatorCode, Indicator, ReporterCountry, Partner, ProductCode, Product, Year, Value_MillionUSD
-    FROM `your_project.your_dataset.your_table`
-    WHERE Year = 2023
-"""
-df = client.query(query).to_dataframe()
-```
-✅ **Fetches trade data for 2023** from BigQuery.
-✅ **Stores data in a Pandas DataFrame** for further processing.
-
-### 2️⃣ **Data Visualization in Python**
-```python
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-plt.figure(figsize=(12, 6))
-sns.barplot(data=df, x='ReporterCountry', y='Value_MillionUSD', hue='Indicator')
-plt.xticks(rotation=45)
-plt.title("Global Trade by Country in 2023")
+data = pd.read_csv("path/to/dataset.csv")
+
+plt.figure(figsize=(12,6))
+sns.lineplot(data=data, x='Year', y='Value_MillionUSD', hue='Indicator')
+plt.title("India's Export & Import Trends (1948-2023)")
+plt.xlabel("Year")
+plt.ylabel("Trade Value (Million USD)")
+plt.legend(title="Trade Type")
 plt.show()
 ```
-✅ **Creates bar charts for trade trends**.
-✅ **Uses Seaborn for enhanced visualizations**.
 
-### 3️⃣ **Generating a PDF Report**
-```python
-from fpdf import FPDF
-
-pdf = FPDF()
-pdf.add_page()
-pdf.set_font("Arial", size=12)
-pdf.cell(200, 10, "Global Trade Analysis Report (2023)", ln=True, align='C')
-pdf.output("Trade_Report.pdf")
-```
-✅ **Automates report generation** with trade insights.
-✅ **Creates a structured and professional PDF report**.
+📸 **Generated Visualizations:** *(Add Python-generated charts here)*
 
 ---
 
-## 📊 Sample Visualization Output
-📈 **Example Chart:**
-![Trade Analysis Chart](example_chart.png)
+### 📌 Section C: ChatGPT AI Report Generation
+
+
+#### **Insights from the Data**
+**India's Trade Performance in 2023:**
+- **Exports:** $431,574M (1.81% of global exports, Rank: 17)
+- **Imports:** $672,231M (2.77% of global imports, Rank: 8)
+- **Total Trade:** $1,103,805M (2.3% of global trade, Rank: 14)
+- **Trade Deficit:** $240,657M
+
+**Key Observations:**
+- India's **export ranking remains low** despite its economic size.
+- Major **import categories** include crude oil, gold, and electronic components.
+- **IT services, textiles, and pharmaceuticals** are leading export industries.
+- Currency fluctuations and global demand shifts impact India's trade balance.
+
+#### **Conclusion & Challenges**
+✅ **Key Challenges Identified:**
+1. **High Import Dependency** → India heavily relies on imports for fuels & electronics.
+2. **Weak Export Competitiveness** → Export share (1.81%) is lower than India's GDP contribution.
+3. **Sector-Specific Deficits** → Pharmaceuticals & food sector trade gaps exist.
+4. **Limited Market Penetration** → Exports mostly depend on traditional markets.
+
+#### **Strategic Recommendations & Policy Suggestions**
+### 🔹 Boosting Exports
+- Expand high-value manufacturing: **AI, semiconductors, electronics**
+- Strengthen **trade agreements** with Africa, Latin America, Southeast Asia
+- Introduce **tax benefits** for export-driven industries
+
+### 🔹 Reducing Import Dependence
+- Increase domestic **pharmaceutical & agriculture production**
+- Invest in **renewable energy** to cut oil imports
+
+### 🔹 Strengthening Trade Infrastructure
+- **Improve logistics & ports** to cut export costs
+- **Ease business regulations** for exporters
+
+📸 **ChatGPT-Generated Reports:** *(Add screenshots here)*
 
 ---
 
-## 📢 Future Improvements
-- 📌 **Advanced AI Insights** – Leverage ChatGPT for automated trend analysis.
-- 📌 **Interactive Dashboards** – Develop Power BI/Tableau dashboards.
-- 📌 **Real-time Trade Monitoring** – Implement live BigQuery data streaming.
+##  Final Outlook 🚀
+India has the potential to **improve its global trade ranking** by:
+- Strengthening **high-value manufacturing exports**
+- Reducing **fuel & machinery import dependency**
+- Expanding global trade agreements
+- Improving **logistics and supply chain efficiency**
+
+By implementing **strategic trade policies**, India can achieve a **more balanced trade profile** in the coming years.
 
 ---
+## 🔗 References
+- **Google BigQuery** Documentation
+- **World Bank Trade Data**
 
-## 🤝 Contributing
-🔹 **Fork the repository**
-🔹 **Create a new branch** (`feature-branch`)
-🔹 **Commit your changes**
-🔹 **Push to GitHub and create a Pull Request**
 
 ---
+## 📌 Author
+🔹 **GitHub:** [Your GitHub Profile](https://github.com/your-profile)
+🔹 **LinkedIn:** [Your LinkedIn](https://linkedin.com/in/your-profile)
 
-## 📜 License
-This project is licensed under the **MIT License**.
 
-🔗 **Author:** [Your Name](https://github.com/yourusername)
+
+
+
+
+
+
+
+
+
+
+
 
