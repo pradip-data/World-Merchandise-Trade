@@ -119,7 +119,11 @@ SELECT
 FROM IndiaTrade
 ORDER BY Year;
 ```
-📸 **BigQuery Execution Screenshots:** *(Add screenshots here)*
+📸 **BigQuery Execution Screenshots:**
+
+*https://github.com/pradip-data/World-Merchandise-Trade/blob/866246cb9e2593a5b7c0960b7441ef9257ffa98e/Bigquery%20Google%20Cloud%20Console%20project%20images/BigQuery-Google%20Cloud%20Console%201.png*
+
+
 
 ---
 
