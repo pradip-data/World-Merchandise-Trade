@@ -133,20 +133,49 @@ ORDER BY Year;
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
 
-data = pd.read_csv("path/to/dataset.csv")
+# 📂 Load dataset
+file_path = r"C:\Users\chemi\Downloads\PROJECT -World Merchandise Trade  (Bigquery Project)\BigQuery Output Result\India's Global Trade Case Study (1948-2023).csv"
+df = pd.read_csv(file_path)
 
-plt.figure(figsize=(12,6))
-sns.lineplot(data=data, x='Year', y='Value_MillionUSD', hue='Indicator')
-plt.title("India's Export & Import Trends (1948-2023)")
+# 🛠 Data Preprocessing
+df['Year'] = pd.to_numeric(df['Year'], errors='coerce')
+df["Trade Balance"] = df["India_Exports"] - df["India_Imports"]
+df["Total Trade"] = df["India_Exports"] + df["India_Imports"]
+
+# 🔥 1. India's Exports & Imports Over Time
+plt.figure(figsize=(12, 6))
+sns.lineplot(x="Year", y="India_Exports", data=df, label="Exports", marker="o", color="blue")
+sns.lineplot(x="Year", y="India_Imports", data=df, label="Imports", marker="s", color="red")
+plt.title("India's Exports & Imports (1948-2023)")
 plt.xlabel("Year")
-plt.ylabel("Trade Value (Million USD)")
-plt.legend(title="Trade Type")
+plt.ylabel("USD Billion")
+plt.legend()
+plt.grid(True)
 plt.show()
+
+# 🔴 2. Trade Deficit Trend
+plt.figure(figsize=(12, 6))
+sns.lineplot(x="Year", y="Trade_Deficit", data=df, marker="o", color="darkred")
+plt.axhline(0, color="black", linewidth=1)
+plt.title("India's Trade Deficit Over Time")
+plt.xlabel("Year")
+plt.ylabel("Trade Deficit (USD Billion)")
+plt.grid(True)
+plt.show()
+
 ```
 📸 **Generated Visualizations:** 
 
-*1.*
+**1.Export & Import Growth Trend (2013-2023)**
+*https://github.com/pradip-data/World-Merchandise-Trade/blob/5703071258d0cde18e647cb57597d209c0c411ed/Python%20Visulization%20Images/Exports%20%20%26%20Imports%20Growth%20Trends%20(2013-23).png*
+
+**2.
+
+
+
 
 ---
 
