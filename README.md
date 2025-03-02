@@ -187,15 +187,17 @@ plt.show()
 **6. Indias's Position in Trade 2023**
 *https://github.com/pradip-data/World-Merchandise-Trade/blob/2d6593da546c6988dbf643aa0d53e0d4423b7976/Python%20Visulization%20Images/indias%20position%20in%20Trade%202023.png*
 
-**7.  **
-**
+**7. Trade Deficit Comparison between India and China (2023)**
+*https://github.com/pradip-data/World-Merchandise-Trade/blob/8b0ba5037c04b0e590c577f9310c67e6337c7584/Python%20Visulization%20Images/india%20vs%20china%20Trade%20Deficit%20Comparision%202023.png*
 
 
 
 ---
 
 ## 📌 Section C: ChatGPT AI Report Generation
-🔍 *(Screenshots and code snippets will be placed here)*
+
+🔍 **Link of AI Generated Report**
+
 
 ---
 
