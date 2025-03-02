@@ -64,7 +64,7 @@ export GOOGLE_APPLICATION_CREDENTIALS="path/to/your-key.json"
 
 ## 📜 Analysis & Code Overview 
 
-## 📌 Section A: BigQuery Code & Console Screenshots
+## 📌 Section A: Some BigQuery Code & Console Screenshots
 
 ### 1️⃣ Yearly Growth of Trade Value (1948-2023)
 ```sql
@@ -123,7 +123,7 @@ ORDER BY Year;
 
 *https://github.com/pradip-data/World-Merchandise-Trade/blob/866246cb9e2593a5b7c0960b7441ef9257ffa98e/Bigquery%20Google%20Cloud%20Console%20project%20images/BigQuery-Google%20Cloud%20Console%201.png*
 
-
+*https://github.com/pradip-data/World-Merchandise-Trade/blob/3223d8a7157473066f1796867760e0286724330e/Bigquery%20Google%20Cloud%20Console%20project%20images/BigQuery-Google%20Cloud%20Console%202.png*
 
 ---
 
@@ -144,7 +144,9 @@ plt.ylabel("Trade Value (Million USD)")
 plt.legend(title="Trade Type")
 plt.show()
 ```
-📸 **Generated Visualizations:** *(Add Python-generated charts here)*
+📸 **Generated Visualizations:** 
+
+*1.*
 
 ---
 
