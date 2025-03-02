@@ -10,6 +10,12 @@ This project analyzes **global merchandise trade trends from 1947 to 2023**, wit
 ✅ **ChatGPT AI** – AI-driven insights & trend analysis 🤖  
 ✅ **Automated PDF Reports** – Structured storytelling with key findings 📄  
 
+---
+
+## 🌍 Data Source  
+
+📌 The trade data used in this project is sourced from the **World Trade Organization (WTO)**.  
+🔗 **Official WTO Merchandise Trade Statistics:** [WTO Trade Data](https://www.wto.org/english/res_e/statis_e/merch_trade_stat_e.htm)  
 
 ---
 
