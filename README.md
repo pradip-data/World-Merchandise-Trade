@@ -3,10 +3,13 @@
 ## 📌 Project Overview
 This project analyzes **global merchandise trade trends from 1947 to 2023**, with a primary focus on **India's trade performance**. The dataset is sourced from **Google BigQuery** and consists of key indicators such as **exports, imports, total trade, and trade deficit** for different countries. The analysis leverages:
 
-✅ **Google BigQuery** for data extraction 📊  
-✅ **Python** for data processing & visualization 🐍  
-✅ **ChatGPT AI** for insights generation 🤖  
-✅ **Automated PDF Report** for structured storytelling 📄
+
+### 🚀 Technologies & Methodologies Used:  
+✅ **Google BigQuery** – Efficient data extraction & querying 📊  
+✅ **Python** – Data processing, transformation & visualization 🐍  
+✅ **ChatGPT AI** – AI-driven insights & trend analysis 🤖  
+✅ **Automated PDF Reports** – Structured storytelling with key findings 📄  
+
 
 ---
 
