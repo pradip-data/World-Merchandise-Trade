@@ -62,7 +62,10 @@ export GOOGLE_APPLICATION_CREDENTIALS="path/to/your-key.json"
 
 ---
 
+## 📜 Analysis & Code Overview 
+
 ## 📌 Section A: BigQuery Code & Console Screenshots
+
 ### 1️⃣ Yearly Growth of Trade Value (1948-2023)
 ```sql
 WITH YearlyTrade AS (
