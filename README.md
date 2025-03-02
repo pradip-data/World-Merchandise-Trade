@@ -170,26 +170,29 @@ plt.show()
 ```
 📸 **Generated Visualizations:** 
 
-**1.Export & Import Growth Trend (2013-2023)**
-*https://github.com/pradip-data/World-Merchandise-Trade/blob/5703071258d0cde18e647cb57597d209c0c411ed/Python%20Visulization%20Images/Exports%20%20%26%20Imports%20Growth%20Trends%20(2013-23).png*
+## 📸 Generated Visualizations
 
-**2.India's Imports & Exports Trend (1948-2023)**
-*https://github.com/pradip-data/World-Merchandise-Trade/blob/58fb7f7c181b34e5b378d24e4360c2145e1d0871/Python%20Visulization%20Images/India's%20Import%20%26%20%20Export%20Trend%20(1948-2023).png*
+### 1. Export & Import Growth Trend (2013-2023)
+<img src="https://github.com/pradip-data/World-Merchandise-Trade/blob/5703071258d0cde18e647cb57597d209c0c411ed/Python%20Visulization%20Images/Exports%20%20%26%20Imports%20Growth%20Trends%20(2013-23).png" alt="Export & Import Growth Trend (2013-2023)" width="700">
 
-**3. Indias's Trade Breakdowm 2023**
-*https://github.com/pradip-data/World-Merchandise-Trade/blob/c4ece9e5dc5ee4cb9005fa5a06d418e5ce1257f7/Python%20Visulization%20Images/India's%20Trade%20Breakdown%202023.png*
+### 2. India's Imports & Exports Trend (1948-2023)
+<img src="https://github.com/pradip-data/World-Merchandise-Trade/blob/58fb7f7c181b34e5b378d24e4360c2145e1d0871/Python%20Visulization%20Images/India's%20Import%20%26%20%20Export%20Trend%20(1948-2023).png" alt="India's Imports & Exports Trend (1948-2023)" width="700">
 
-**4. Indias's Share in Global Trade over Time**
-*https://github.com/pradip-data/World-Merchandise-Trade/blob/3c9f7c3ba825869d09cbe7026b679f782c8f2ba7/Python%20Visulization%20Images/India's%20share%20in%20global%20Trade%20over%20time.png*
+### 3. India's Trade Breakdown 2023
+<img src="https://github.com/pradip-data/World-Merchandise-Trade/blob/c4ece9e5dc5ee4cb9005fa5a06d418e5ce1257f7/Python%20Visulization%20Images/India's%20Trade%20Breakdown%202023.png" alt="India's Trade Breakdown 2023" width="700">
 
-**5. Top 10 Countries with Heighest Trade Deficit**
-*https://github.com/pradip-data/World-Merchandise-Trade/blob/44be331f8864320bb7f4659f69dbe951fc8a82a8/Python%20Visulization%20Images/Top%2010%20Countries%20with%20Heighest%20Trade%20Deficit%202023.png*
+### 4. India's Share in Global Trade over Time
+<img src="https://github.com/pradip-data/World-Merchandise-Trade/blob/3c9f7c3ba825869d09cbe7026b679f782c8f2ba7/Python%20Visulization%20Images/India's%20share%20in%20global%20Trade%20over%20time.png" alt="India's Share in Global Trade over Time" width="700">
 
-**6. Indias's Position in Trade 2023**
-*https://github.com/pradip-data/World-Merchandise-Trade/blob/2d6593da546c6988dbf643aa0d53e0d4423b7976/Python%20Visulization%20Images/indias%20position%20in%20Trade%202023.png*
+### 5. Top 10 Countries with Highest Trade Deficit
+<img src="https://github.com/pradip-data/World-Merchandise-Trade/blob/44be331f8864320bb7f4659f69dbe951fc8a82a8/Python%20Visulization%20Images/Top%2010%20Countries%20with%20Heighest%20Trade%20Deficit%202023.png" alt="Top 10 Countries with Highest Trade Deficit" width="700">
 
-**7. Trade Deficit Comparison between India and China (2023)**
-*https://github.com/pradip-data/World-Merchandise-Trade/blob/8b0ba5037c04b0e590c577f9310c67e6337c7584/Python%20Visulization%20Images/india%20vs%20china%20Trade%20Deficit%20Comparision%202023.png*
+### 6. India's Position in Trade 2023
+<img src="https://github.com/pradip-data/World-Merchandise-Trade/blob/2d6593da546c6988dbf643aa0d53e0d4423b7976/Python%20Visulization%20Images/indias%20position%20in%20Trade%202023.png" alt="India's Position in Trade 2023" width="700">
+
+### 7. Trade Deficit Comparison between India and China (2023)
+<img src="https://github.com/pradip-data/World-Merchandise-Trade/blob/8b0ba5037c04b0e590c577f9310c67e6337c7584/Python%20Visulization%20Images/india%20vs%20china%20Trade%20Deficit%20Comparision%202023.png" alt="Trade Deficit Comparison between India and China (2023)" width="700">
+
 
 
 
