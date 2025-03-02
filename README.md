@@ -175,13 +175,16 @@ plt.show()
 **2.India's Imports & Exports Trend (1948-2023)**
 *https://github.com/pradip-data/World-Merchandise-Trade/blob/58fb7f7c181b34e5b378d24e4360c2145e1d0871/Python%20Visulization%20Images/India's%20Import%20%26%20%20Export%20Trend%20(1948-2023).png*
 
-**3. Indias's Trade Breakdowm 2023 **
+**3. Indias's Trade Breakdowm 2023**
 *https://github.com/pradip-data/World-Merchandise-Trade/blob/c4ece9e5dc5ee4cb9005fa5a06d418e5ce1257f7/Python%20Visulization%20Images/India's%20Trade%20Breakdown%202023.png*
 
-**4. Indias's Share in Global Trade over Time **
+**4. Indias's Share in Global Trade over Time**
 *https://github.com/pradip-data/World-Merchandise-Trade/blob/3c9f7c3ba825869d09cbe7026b679f782c8f2ba7/Python%20Visulization%20Images/India's%20share%20in%20global%20Trade%20over%20time.png*
 
-**5.   **
+**5. Top 10 Countries with Heighest Trade Deficit**
+*https://github.com/pradip-data/World-Merchandise-Trade/blob/44be331f8864320bb7f4659f69dbe951fc8a82a8/Python%20Visulization%20Images/Top%2010%20Countries%20with%20Heighest%20Trade%20Deficit%202023.png*
+
+**6. **
 **
 
 
