@@ -166,15 +166,6 @@ plt.legend()
 plt.grid(True)
 plt.show()
 
-# 🔴 2. Trade Deficit Trend
-plt.figure(figsize=(12, 6))
-sns.lineplot(x="Year", y="Trade_Deficit", data=df, marker="o", color="darkred")
-plt.axhline(0, color="black", linewidth=1)
-plt.title("India's Trade Deficit Over Time")
-plt.xlabel("Year")
-plt.ylabel("Trade Deficit (USD Billion)")
-plt.grid(True)
-plt.show()
 
 ```
 
