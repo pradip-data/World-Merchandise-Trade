@@ -64,7 +64,7 @@ export GOOGLE_APPLICATION_CREDENTIALS="path/to/your-key.json"
 
 ## 📜 Analysis & Code Overview 
 
-## 📌 Section A: Some BigQuery Code & Console Screenshots
+## 📌 Section A : Some BigQuery Code & Console Screenshots
 
 ### 1️⃣ Yearly Growth of Trade Value (1948-2023)
 ```sql
@@ -128,7 +128,7 @@ ORDER BY Year;
 
 ---
 
-## 📌 Section B: Python Code & Visualizations
+## 📌 Section B : Python Code & Visualizations
 ### 📊 Python Code for Data Visualization
 ```python
 import pandas as pd
@@ -168,7 +168,6 @@ plt.grid(True)
 plt.show()
 
 ```
-📸 **Generated Visualizations:** 
 
 ## 📸 Generated Visualizations
 
@@ -198,17 +197,19 @@ plt.show()
 
 ---
 
-## 📌 Section C: ChatGPT AI Report Generation
+## 🔍 Section C : AI-Generated Reports
 
-🔍 **Link of AI Generated Report**
+### 📄 1. Detailed Insights, Observations, and Recommendations on India's Trade Performance (2023)
+📌 **Comprehensive analysis** covering key insights, trends, and expert recommendations for India's trade performance in 2023.  
+📂 **[View Report](https://github.com/pradip-data/World-Merchandise-Trade/blob/4ab61b1a611682941040f6f859c2f8a83a4d19aa/AI%20Generated%20Insights%20%26%20Recommendation/Detailed%20Insights%2C%20Observations%2C%20and%20Recommendations%20on%20India%E2%80%99s%20Trade%20Performance%20(2023).pdf)**  
 
-*1.Detailed insights,observation and recommendations on india's trade perfomance 2023*
+---
 
-*https://github.com/pradip-data/World-Merchandise-Trade/blob/4ab61b1a611682941040f6f859c2f8a83a4d19aa/AI%20Generated%20Insights%20%26%20Recommendation/Detailed%20Insights%2C%20Observations%2C%20and%20Recommendations%20on%20India%E2%80%99s%20Trade%20Performance%20(2023).pdf*
+### 📄 2. India's Product-wise Trade Performance (1948-2023)
+📌 **In-depth report** analyzing India's product-wise trade trends from 1948 to 2023, highlighting key patterns and growth opportunities.  
+📂 **[View Report](https://github.com/pradip-data/World-Merchandise-Trade/blob/8ba22ef6284438ed8727f88f5664873bc7a6b704/AI%20Generated%20Insights%20%26%20Recommendation/Insights-India's%20Product-wise%20Trade%20Performance%20(1948-2023)%20detailed.pdf)**  
 
-*2.Indias's product wise Trade Perfomance 1948-2023
 
-*https://github.com/pradip-data/World-Merchandise-Trade/blob/8ba22ef6284438ed8727f88f5664873bc7a6b704/AI%20Generated%20Insights%20%26%20Recommendation/Insights-India's%20Product-wise%20Trade%20Performance%20(1948-2023)%20detailed.pdf*
 
 
 ---
@@ -355,8 +356,8 @@ By implementing **strategic policies**, **investing in infrastructure**, and **e
 ---
 
 🔗 **Author & Contributions**  
-👤 Your Name - [GitHub](https://github.com/yourusername)  
-📩 For inquiries, reach out at: **your.email@example.com**  
+👤 Your Name - **Mangroliya Pradip**
+📩 For inquiries, reach out at: **pradipias2023@gmail.com**  
 ---
 
 
