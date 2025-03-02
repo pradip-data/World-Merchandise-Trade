@@ -11,15 +11,15 @@ This project analyzes global merchandise trade trends from 1947 to 2023, with a 
 - Analyze India's **exports, imports, total trade, and trade deficit** over time.
 - Compare India's trade performance against global leaders.
 - Identify key trade trends, challenges, and opportunities for improvement.
-- 
+  
 ## 📊 Key Questions Analyzed
 
-1.How has global trade evolved from 1947 to 2023?
-2.What is India’s trade performance in exports, imports, and total trade?
-3.How has India’s trade deficit changed over time?
-4.How does India compare with top exporting and importing nations?
-5.What are the key challenges in India’s trade landscape?
-6.What strategies can improve India’s trade competitiveness?
+- 1.How has global trade evolved from 1947 to 2023?
+- 2.What is India’s trade performance in exports, imports, and total trade?
+- 3.How has India’s trade deficit changed over time?
+- 4.How does India compare with top exporting and importing nations?
+- 5.What are the key challenges in India’s trade landscape?
+- 6.What strategies can improve India’s trade competitiveness?
 
 ## 📊 Key Features
 ✅ **BigQuery for Data Extraction** – Query and fetch trade data from Google BigQuery.
