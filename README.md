@@ -119,11 +119,12 @@ SELECT
 FROM IndiaTrade
 ORDER BY Year;
 ```
-📸 **BigQuery Execution Screenshots:**
 
-*https://github.com/pradip-data/World-Merchandise-Trade/blob/866246cb9e2593a5b7c0960b7441ef9257ffa98e/Bigquery%20Google%20Cloud%20Console%20project%20images/BigQuery-Google%20Cloud%20Console%201.png*
+## 📸 BigQuery Execution Screenshots  
 
-*https://github.com/pradip-data/World-Merchandise-Trade/blob/3223d8a7157473066f1796867760e0286724330e/Bigquery%20Google%20Cloud%20Console%20project%20images/BigQuery-Google%20Cloud%20Console%202.png*
+<img src="https://github.com/pradip-data/World-Merchandise-Trade/blob/866246cb9e2593a5b7c0960b7441ef9257ffa98e/Bigquery%20Google%20Cloud%20Console%20project%20images/BigQuery-Google%20Cloud%20Console%201.png" alt="BigQuery Console 1" width="700">
+
+<img src="https://github.com/pradip-data/World-Merchandise-Trade/blob/3223d8a7157473066f1796867760e0286724330e/Bigquery%20Google%20Cloud%20Console%20project%20images/BigQuery-Google%20Cloud%20Console%202.png" alt="BigQuery Console 2" width="700">
 
 ---
 
@@ -202,6 +203,9 @@ plt.show()
 
 *https://github.com/pradip-data/World-Merchandise-Trade/blob/4ab61b1a611682941040f6f859c2f8a83a4d19aa/AI%20Generated%20Insights%20%26%20Recommendation/Detailed%20Insights%2C%20Observations%2C%20and%20Recommendations%20on%20India%E2%80%99s%20Trade%20Performance%20(2023).pdf*
 
+*2.Indias's product wise Trade Perfomance 1948-2023
+
+*https://github.com/pradip-data/World-Merchandise-Trade/blob/8ba22ef6284438ed8727f88f5664873bc7a6b704/AI%20Generated%20Insights%20%26%20Recommendation/Insights-India's%20Product-wise%20Trade%20Performance%20(1948-2023)%20detailed.pdf*
 
 
 ---
