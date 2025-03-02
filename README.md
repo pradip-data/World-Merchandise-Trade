@@ -198,6 +198,11 @@ plt.show()
 
 🔍 **Link of AI Generated Report**
 
+*1.Detailed insights,observation and recommendations on india's trade perfomance 2023*
+
+*https://github.com/pradip-data/World-Merchandise-Trade/blob/4ab61b1a611682941040f6f859c2f8a83a4d19aa/AI%20Generated%20Insights%20%26%20Recommendation/Detailed%20Insights%2C%20Observations%2C%20and%20Recommendations%20on%20India%E2%80%99s%20Trade%20Performance%20(2023).pdf*
+
+
 
 ---
 
