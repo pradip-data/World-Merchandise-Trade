@@ -184,8 +184,12 @@ plt.show()
 **5. Top 10 Countries with Heighest Trade Deficit**
 *https://github.com/pradip-data/World-Merchandise-Trade/blob/44be331f8864320bb7f4659f69dbe951fc8a82a8/Python%20Visulization%20Images/Top%2010%20Countries%20with%20Heighest%20Trade%20Deficit%202023.png*
 
-**6. **
+**6. Indias's Position in Trade 2023**
+*https://github.com/pradip-data/World-Merchandise-Trade/blob/2d6593da546c6988dbf643aa0d53e0d4423b7976/Python%20Visulization%20Images/indias%20position%20in%20Trade%202023.png*
+
+**7.  **
 **
+
 
 
 ---
