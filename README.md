@@ -356,8 +356,8 @@ By implementing **strategic policies**, **investing in infrastructure**, and **e
 ---
 
 🔗 **Author & Contributions**  
-👤 Your Name - **Mangroliya Pradip**
-📩 For inquiries, reach out at: **pradipias2023@gmail.com**  
+👤 Your Name - Mangroliya Pradip
+📩 For inquiries, reach out at: pradipias2023@gmail.com 
 ---
 
 
